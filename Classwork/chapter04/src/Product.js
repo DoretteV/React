@@ -16,7 +16,9 @@ class Product extends Component {
             {this.props.releaseDate}
             <Rating 
                 rating={this.props.data.rating}
-                numOfReviews={this.props.data.numOfReviews} />
+                //numOfReviews={this.props.data.numOfReviews} 
+                />
+                <p>Reviews: {this.props.data.numOfReviews}</p>
             <p>{this.props.data.description}</p>
           </Card.Body>
         </Card>
