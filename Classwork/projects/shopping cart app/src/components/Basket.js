@@ -6,6 +6,7 @@ export default function Basket(props) {
     const taxPrice = itemsPrice * 0.15;
     const shippingPrice = itemsPrice > 3000 ? 0 : 350;
     const totalPrice = itemsPrice + taxPrice + shippingPrice;
+    
     return (
         <aside className='block col-1'>
             <h2>Cart Items</h2>
